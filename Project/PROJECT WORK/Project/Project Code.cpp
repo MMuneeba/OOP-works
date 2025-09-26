@@ -558,12 +558,12 @@ struct Bill {
              << setw(15) << right << fixed << setprecision(2) << base() << "\n";
 
         if (insured) {
-            cout << setw(30) << left << "Insurance Coverage:" 
-                 << setw(15) << right << coveragePercent << "%\n";
+            cout << setw(15) << left << "Insurance Coverage:" 
+                 << setw(30) << right << coveragePercent << "%\n";
         }
 
-        cout << setw(30) << left << "Total Payable:" 
-             << setw(15) << right << fixed << setprecision(2) << total() << "\n";
+        cout << setw(15) << left << "Total Payable:" 
+             << setw(30) << right << fixed << setprecision(2) << total() << "\n";
         setColor(7); // Reset
         cout << "=====================================================\n";
     }
@@ -1599,6 +1599,7 @@ int main() {
     }
 }
     //return 0;}
+
 
 
 
