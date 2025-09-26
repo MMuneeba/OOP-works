@@ -196,7 +196,7 @@ public:
 };
 
 // --------------------------
-// Person classes
+// Person Classes
 // --------------------------
 class Person {
 protected:
@@ -311,7 +311,7 @@ public:
         Person::displayInfo();
         cout << "  Specialization: " << specialization << " | Fee: " << consultationFee << "\n";
         if (!bookedSlots.empty()) {
-            cout << "  Booked slots: ";
+            cout << "  Booked Slots: ";
             for (size_t i = 0; i < bookedSlots.size(); ++i) {
                 cout << bookedSlots[i];
                 if (i + 1 < bookedSlots.size()) cout << ", ";
@@ -396,7 +396,7 @@ public:
 };
 
 // --------------------------
-// Pharmacy service
+// Pharmacy Services
 // --------------------------
 class PharmacyService : public HospitalService {
 private:
@@ -566,6 +566,7 @@ struct Bill {
              << setw(30) << right << fixed << setprecision(2) << total() << "\n";
         setColor(7); // Reset
         cout << "=====================================================\n";
+		cout << "=====================================================\n";
     }
 
     // CSV export
@@ -838,14 +839,14 @@ public:
 		addDoctor(d1);
             Doctor d2; 
 		d2.setName("Dr. Omar Ali"); 
-		d2.setAge(38); 
+		d2.setAge(39); 
 		d2.setGender("M"); 
 		d2.setContact("+92-300-1111111"); 
 		d2.setSpecialization("General"); 
 		d2.setFee(30.0); 
 		addDoctor(d2);
             Patient p1; 
-		p1.setName("Muneeba Arshad"); 
+		p1.setName("Aiman"); 
 		p1.setAge(22); 
 		p1.setGender("F"); 
 		p1.setContact("+92-300-2222222"); 
@@ -1167,7 +1168,7 @@ public:
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
 // -----------------------------------------------------------------------------------------------------------------------------
-//                                                     Menus
+//                                                     MENUs
 // -----------------------------------------------------------------------------------------------------------------------------
 // *****************Admin menu*****************************
 void adminMenu(SHMSDatabase &db, const User &me) {
@@ -1599,6 +1600,7 @@ int main() {
     }
 }
     //return 0;}
+
 
 
 
